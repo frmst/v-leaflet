@@ -1,0 +1,183 @@
+confirmation:
+    title: Confirmation request
+prompt:
+    title: Enter the value
+core:
+    yes: Yes
+    "no": No
+    save: Save
+    cancel: Cancel
+    delete: Delete
+    ok: OK
+    access_denied: Access denied
+    logout: Logout
+    logout.confirm: Are you sure, you want to logout?
+    frames:
+        home: Home
+        settings: Settings
+        settings.users: Users
+        settings.groups: Groups
+        settings.roles: Roles
+        settings.frames: Frames
+    management:
+        users:
+            caption: Manage system users
+            msg:
+                created: User created successfuly
+                deleted: User deleted successfuly
+                edited: User data updated successfuly
+                pwd_mismatch: Passwords must match!
+                pwd_null: User must have a password!
+            window:
+                create: New user creation
+                edit: User edition
+            button:
+                create: ""
+                delete: ""
+                edit: ""
+            confirmation:
+                delete: Are you sure, you want to delete that user?
+            tab:
+                basic_data: Basic Data
+                groups: Groups
+                roles: Roles
+            invalid_username: Username must be in a form of e-mail address!
+            username: Username
+            is_enabled: Active?
+            first_name: First name
+            last_name: Last name
+            groups: Grupy, do których użytkownik należy
+            roles: Groups
+            firstName: First name
+            lastName: Last name
+            phoneNo: Phone no
+            isEnabled: Active?
+            plainPassword: Password
+            plainPasswordRepeated: Password (repeat)
+            id: Id
+            core:
+                yes: Yes
+                no: No
+        groups:
+            caption: Manage system security groups
+            msg:
+                created: Security group created successfuly
+                deleted: Security group deleted successfuly
+                edited: Decurity group data updated successfuly
+            window:
+                create: New security group
+                edit: Edit securoty group
+            button:
+                delete: ""
+                edit: ""
+                create: ""
+            confirmation:
+                delete: Are you sure, you want to delete that group?
+            tab:
+                basic_data: Basic data
+                roles: Roles
+            name: Name
+            roles: Roles
+            id: Id
+        roles:
+            caption: Manage system security roles
+            msg:
+                created: Security role created successfuly
+                deleted: Security role deleted successfuly
+                edited: Security role data updated successfuly
+            window:
+                create: New security role
+                edit: Edit security role
+            button:
+                delete: ""
+                create: ""
+                edit: ""
+            confirmation:
+                delete: Are you sure, you want to delete that role?
+            name: Name
+            label: Label
+            tab:
+                basic_data: Basic data
+                child_roles: Sub-roles
+            childRoles: Sub-roles
+            child_roles: Sub-roles
+            id: Id
+        frames:
+            caption: Manage system Frames
+            tree:
+                wrong_operation: This operation is not permitted
+            button:
+                add: ""
+                remove: ""
+            addition:
+                prompt: "Enter Frame name:"
+            deletion:
+                confirmation: "Pick Frame deletion mode:"
+                single: Single Frame
+                subtree: Sub-tree
+            edition:
+                title: Frame details
+                success: Frame data updated successfuly
+            title: Title
+            tab:
+                basic_data: Basic data
+                security: Priviledges
+            slug: Slug
+            moduleId: Module ID
+            menuLabel: Menu label
+            isDefault: Default?
+            icon: Icon
+            save: Zapisz
+    data_component:
+        caption: Data component
+        button:
+            add: ""
+            edit: ""
+            delete: ""
+            save: Save
+            cancel: Cancel
+        window:
+            create: Create new item
+            edit: Edit item
+        confirmation:
+            delete: Are you sure, you want to delete that item?
+        msg:
+            create: Item created successfuly
+            edit: Item data updated successfuly
+            delete: Item deleted successfuly
+        error:
+            update: There was an error during item update
+            delete: There was an error during item deletion
+            add: There was an error during item creation
+    security:
+        permission:
+            read: Read / browse
+            write: Save / edit
+            create: Create
+            delete: Delete
+            administration: Administration
+        management:
+            roles: Pick role
+            permision:
+                update:
+                    success: Selected role's privilegdes were successfuly updated
+    account:
+        update:
+            success: You account data were successfuly updated
+        settings: Account settings
+
+frameset:
+    module:
+        usergen:
+            username_prefix: Username prefix
+            username_suffix: Username suffix
+            from: Beginning index
+            to: Ending index
+            groups: Groups
+            roles: Roles
+            generate: Generate
+            export: Export to CSV
+            username_exists: USER WITH THIS USERNAME ALREADY EXISTS
+            generation_completed: User generation completed. Plead download the provided CSV.
+            msg:
+                user_exists: User with this name already exists!

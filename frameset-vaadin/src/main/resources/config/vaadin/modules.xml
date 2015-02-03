@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+  
+    <bean id="homeModule" class="pl.exsio.frameset.vaadin.module.generic.HomeModule" scope="ui">
+        
+    </bean>
+    
+    <bean id="manageUsersModule" class="pl.exsio.frameset.vaadin.module.management.ManageUsersModule" scope="ui">
+        <property name="entityProvider" ref="userEntityProvider" />
+        <property name="passwordEncoder" ref="passwordEncoder" />
+        <property name="securityEntities" ref="securityEntityFactory" />
+    </bean>
+    
+    <bean id="manageGroupsModule" class="pl.exsio.frameset.vaadin.module.management.ManageGroupsModule" scope="ui">
+        <property name="entityProvider" ref="groupEntityProvider" />
+        <property name="securityEntities" ref="securityEntityFactory" />
+    </bean>
+    
+    <bean id="manageFramesModule" class="pl.exsio.frameset.vaadin.module.management.ManageFramesModule" scope="ui">
+        <property name="frameEntityProvider" ref="frameEntityProvider" />
+        <property name="roleEntityProvider" ref="roleEntityProvider" />
+        <property name="acl" ref="aclManager" />
+        <property name="permissionMapProvider" ref="permissionMapProvider" />
+        <property name="coreEntities" ref="coreEntityFactory" />
+        <property name="coreRepositories" ref="coreRepositoryProvider" />
+    </bean>
+    
+    <bean id="manageRolesModule" class="pl.exsio.frameset.vaadin.module.management.ManageRolesModule" scope="ui">
+        <property name="entityProvider" ref="roleEntityProvider" />
+        <property name="dataSource" ref="dataSource" />
+        <property name="securityEntities" ref="securityEntityFactory" />
+        <property name="cacheManager" ref="cacheManager" />
+    </bean>
+    
+    <bean id="userGenModule" class="pl.exsio.frameset.vaadin.module.util.usergen.UserGenModule" scope="ui" >
+        <property name="groupEntityProvider" ref="groupEntityProvider"/>
+        <property name="roleEntityProvider" ref="roleEntityProvider"/>
+        <property name="securityEntities" ref="securityEntityFactory"/>
+        <property name="securityRepositories" ref="securityRepositoryProvider" />
+        <property name="encoder" ref="passwordEncoder" />
+    </bean>
+</beans>

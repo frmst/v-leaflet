@@ -1,0 +1,183 @@
+confirmation:
+    title: Żądanie potwierdzenia
+prompt:
+    title: Wprowadź parametr    
+core:
+    "yes": Tak
+    "no": Nie
+    save: Zapisz
+    cancel: Anuluj
+    delete: Usuń
+    ok: OK
+    access_denied: Brak dostępu
+    logout: Wyloguj
+    logout.confirm: Czy jesteś pewien, że chcesz się wylogować?
+    frames:
+        home: Home
+        settings: Ustawienia
+        settings.users: Użytkownicy
+        settings.groups: Grupy
+        settings.roles: Role
+        settings.frames: Ramki
+    management:
+        users:
+            caption: Zarządzaj użytkownikami systemowymi
+            msg:
+                created: Pomyślnie utworzono nowego użytkownika
+                deleted: Użytkownik został usunięty
+                edited: Dane użytkownika zostały zaktualizowane
+                pwd_mismatch: Podane hasła muszą się zgadzać!
+                pwd_null: Użytkownik musi mieć hasło!
+            window:
+                create: Tworzenie nowego użytkownika
+                edit: Edycja danych użytkownika
+            button:
+                create: Stwórz nowego użytkownika
+                delete: Usuń użytkownika
+                edit: Edytuj dane użytkownika
+            confirmation:
+                delete: Czy napewno chcesz usunąć tego użytkownika?
+            tab:
+                basic_data: Dane podstawowe
+                groups: Grupy
+                roles: Role
+            invalid_username: Nazwą użytkownika musi być adres e-mail!
+            username: Nazwa użytkownika
+            is_enabled: Aktywowany?
+            first_name: Imię
+            last_name: Nazwisko
+            groups: Grupy
+            roles: Role
+            firstName: Imię
+            lastName: Nazwisko
+            phoneNo: Telefon
+            isEnabled: aktywny?
+            plainPassword: Hasło
+            id: Id
+            plainPasswordRepeated: Hasło (powtórz)
+            core.yes: Tak
+            core.no: Nie
+        groups:
+            caption: Zarządzaj systemowymi grupami zabezpieczeń
+            msg:
+                created: Pomyślnie utworzono nową grupę
+                deleted: Grupa została usunięta
+                edited: Dane grupy zostały zaktualizowane
+            window:
+                create: Tworzenie nowej grupy
+                edit: Edycja danych grupy
+            button:
+                delete: Usuń grupę
+                edit: Edytuj dane grupy
+                create: Stwórz nową grupę
+            confirmation:
+                delete: Czy napewno chcesz usunąć tę grupę?
+            tab:
+                basic_data: Dane podstawowe
+                roles: Role
+            name: Nazwa
+            roles: Role
+            id: Id
+        roles:
+            caption: Zarządzaj systemowymi rolami
+            msg:
+                created: Pomyślnie utworzono nową rolę
+                deleted: Rola została usunięta
+                edited: Dane roli zostały zaktualizowane
+            window:
+                create: Tworzenie nowej roli
+                edit: Edycja danych roli
+            button:
+                delete: Usuń rolę
+                create: Stwórz nową rolę
+                edit: Edytuj dane roli
+            confirmation:
+                delete: Czy napewno chcesz usunąć tę rolę?
+            name: Nazwa roli
+            label: Etykieta roli
+            tab:
+                basic_data: Dane podstawowe
+                child_roles: Pod-role
+            childRoles: Pod-role
+            child_roles: Pod-role
+            id: Id
+        frames:
+            caption: Zarządzaj Ramkami w systemie
+            tree:
+                wrong_operation: Ta operacja nie jest dozwolona
+            button:
+                add: Dodaj
+                remove: Usuń
+            addition:
+                prompt: Wprowadź nazwę nowej Ramki
+            deletion:
+                confirmation: "Wybierz tryb usuwania Ramki:"
+                single: Pojedyncza Ramka
+                subtree: Pod-drzewo Ramek
+            edition:
+                title: Szczegóły Ramki
+                success: Dane ramki zostały zapisane prawidłowo
+            title: Tytuł
+            tab:
+                basic_data: Dane podstawowe
+                security: Uprawnienia
+            slug: Slug
+            moduleId: ID Modułu
+            menuLabel: Etykieta menu
+            isDefault: Domyślna?
+            icon: Ikona
+            save: Zapisz
+    data_component:
+        caption: Tabela danych
+        button:
+            add: Dodaj element
+            edit: Edytuj element
+            delete: Usuń element
+            save: Zapisz
+            cancel: Anuluj
+        window:
+            create: Tworzenie nowego elementu
+            edit: Edycja danych elementu
+        confirmation:
+            delete: Czy napewno chcesz usunąć ten element?
+        msg:
+            create: Pomyślnie utworzono nowy element
+            edit: Pomyślnie zaktualizowano dane elementu
+            delete: Pomyślnie usunięto element
+        error:
+            update: Podczas próby aktualizacji danych wystąpił błąd
+            delete: Podczas próby usunięcia danych wystąpił błąd
+            add: Podczas próby zapisu nowych danych wystąpił błąd
+            save: Podczas próby zapisu nowych danych wystąpił błąd
+    security:
+        permission:
+            read: Odczyt / przeglądanie
+            write: Zapis / Edycja
+            create: Tworzenie
+            delete: Usuwanie
+            administration: Administracja
+        management:
+            roles: Wybierz Rolę
+            permision:
+                update:
+                    success: Uprawnienia wybranej Roli zostały pomyślnie zaktualizowane
+    account:
+        update:
+            success: Dane Twojego konta zostały pomyślnie zaktualizowane
+        settings: Ustawienia konta
+
+frameset:
+    module:
+        usergen:
+            username_prefix: Początek nazwy uż.
+            username_suffix: Końcówka nazwy uż.
+            from: Indeks początkowy
+            to: Indeks końcowy
+            groups: Grupy
+            roles: Role
+            generate: Generuj
+            export: Eksportuj do CSV
+            username_exists: UŻYTKOWNIK Z TAKĄ NAZWĄ JUŻ ISTNIEJE
+            generation_completed: Generowanie użytkowników zostało zakończone. Prosimy o pobranie pliku CSV z danymi wygenerowanych użytkowników.
+            msg:
+                user_exists: Taki użytkownik już istnieje!

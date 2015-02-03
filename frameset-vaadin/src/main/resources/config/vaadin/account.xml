@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+    
+    <bean id="accountWindowPresenter" class="pl.exsio.frameset.vaadin.account.window.presenter.AccountWindowPresenterImpl" scope="prototype">
+        <property name="view">
+            <bean class="pl.exsio.frameset.vaadin.account.window.view.AccountWindowView">
+                <property name="securityRepositories" ref="securityRepositoryProvider" />
+                <property name="securityEntities" ref="securityEntityFactory" />
+                <property name="entityProvider" ref="userEntityProvider" />
+            </bean>
+        </property>
+        <property name="passwordEncoder" ref="passwordEncoder" />
+        <property name="securityRepositories" ref="securityRepositoryProvider" />
+    </bean>
+    
+    <bean id="accountMenuPresenter" class="pl.exsio.frameset.vaadin.account.menu.presenter.AccountMenuPresenterImpl" scope="prototype">
+        <property name="securityRepositories" ref="securityRepositoryProvider" />
+        <property name="logoutPath" value="logout/" />
+    </bean>
+    
+    <bean id="verticalAccountMenu" class="pl.exsio.frameset.vaadin.account.menu.view.VerticalAccountMenuViewImpl" scope="ui">
+        <property name="presenter" ref="accountMenuPresenter" />
+    </bean>
+    
+    <bean id="horizontalAccountMenu" class="pl.exsio.frameset.vaadin.account.menu.view.HorizontalAccountMenuViewImpl" scope="ui">
+        <property name="presenter" ref="accountMenuPresenter" />
+    </bean>
+    
+</beans>
