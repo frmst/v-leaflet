@@ -181,3 +181,10 @@ frameset:
             generation_completed: Generowanie użytkowników zostało zakończone. Prosimy o pobranie pliku CSV z danymi wygenerowanych użytkowników.
             msg:
                 user_exists: Taki użytkownik już istnieje!
+pl.exsio.frameset.security.entity.UserImpl:
+    username: Nazwa użytkownika
+    firstName: Imię
+    lastName: Nazwisko
+    phoneNo: Telefon
+    plainPassword: Hasło
+    plainPasswordRepeated: Hasło (powt.)
